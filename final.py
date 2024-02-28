@@ -94,7 +94,7 @@ def drawLinesFromPoints(image, points):
         cv.line(image, points[i], points[i+1], (0, 255, 0), 1)
         
     for i in range(len(points)):
-        cv.line(image, (i*stepSize, len(image)), points[i], (0, 255, 0), 1)
+        cv.line(image, (i*5, len(image)), points[i], (0, 255, 0), 1)
     if testMode:
         print("Lines Drawn")
     if imageMode:
